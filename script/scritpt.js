@@ -43,32 +43,73 @@ document.getElementById("all-btn")
     }
   });
 
+const hiddenDiv = document.getElementById('hidden-div');
+
 document.getElementById("interview-btn")
   .addEventListener("click", function () {
     // console.log("interview clicked")
+    let count = 0;
     const allCards = document.querySelectorAll(".card");
     // console.log(allCards)
     for (const cards of allCards) {
       if (cards.dataset.status === "interview") {
         cards.classList.remove("hidden");
+        count++;
       }
       else {
         cards.classList.add("hidden");
       }
+    }
+    if (count === 0) {
+      hiddenDiv.classList.remove('hidden')
+    } else {
+      hiddenDiv.classList.add('hidden')
     }
   });
 
 document.getElementById("rejected-btn")
   .addEventListener("click", function () {
     // console.log("rejected clicked")
+    let count = 0;
     const allCards = document.querySelectorAll(".card");
     // console.log(allCards);
     for (const cards of allCards) {
       if (cards.dataset.status === "rejected") {
         cards.classList.remove("hidden");
+        count++
       }
       else {
         cards.classList.add("hidden");
       }
     }
+    if (count === 0) {
+      hiddenDiv.classList.remove('hidden');
+    } else {
+      hiddenDiv.classList.add('hidden');
+    }
   });
+
+// console.log(hiddenDiv);
+// const cardsHidden = document.querySelectorAll(".card");
+// // console.log(cardsHidden);
+
+
+// function cardsFilter() {
+//   let itemList = [];
+//   for (const cards of cardsHidden) {
+//     if (cards.dataset.status === "interview") {
+//       cards.classList.remove('hidden')
+//       itemList.push(cards);
+//     }
+//     else {
+//       cards.classList.add('hidden')
+//     }
+//   }
+//   if (itemList.length === 0) {
+//     hiddenDiv.classList.remove('hidden');
+//   } else {
+//     hiddenDiv.classList.add('hidden');
+//   }
+// }
+
+// cardsFilter();
