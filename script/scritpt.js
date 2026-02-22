@@ -33,4 +33,42 @@ jobsSectionCard.addEventListener("click", function (event) {
 
 });
 
+document.getElementById("all-btn")
+  .addEventListener("click", function () {
+    // console.log('button clicked');
+    const alCards = document.querySelectorAll(".card");
+    for (const cards of alCards) {
+      // console.log(cards);
+      cards.classList.remove("hidden")
+    }
+  });
 
+document.getElementById("interview-btn")
+  .addEventListener("click", function () {
+    // console.log("interview clicked")
+    const allCards = document.querySelectorAll(".card");
+    // console.log(allCards)
+    for (const cards of allCards) {
+      if (cards.dataset.status === "interview") {
+        cards.classList.remove("hidden");
+      }
+      else {
+        cards.classList.add("hidden");
+      }
+    }
+  });
+
+document.getElementById("rejected-btn")
+  .addEventListener("click", function () {
+    // console.log("rejected clicked")
+    const allCards = document.querySelectorAll(".card");
+    // console.log(allCards);
+    for (const cards of allCards) {
+      if (cards.dataset.status === "rejected") {
+        cards.classList.remove("hidden");
+      }
+      else {
+        cards.classList.add("hidden");
+      }
+    }
+  });
