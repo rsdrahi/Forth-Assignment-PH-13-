@@ -32,7 +32,7 @@
 <body class="bg-[#F1F2F4]">
 
   <header class="space-y-[25px] w-11/12 mx-auto mb-8">
-    <h1 class="text-4xl font-bold text-[#002C5C] ">Job Application Tracker</h1>
+    <h1 class="text-4xl font-bold text-[#002C5C]">Job Application Tracker</h1>
     <div class="grid grid-cols-3 gap-2">
       <div class="bg-[#FFFFFF] p-5 rounded-[10px]">
         <p>Total</p>
@@ -66,8 +66,7 @@
     <section id="jobs-section">
 
       <!-- card 1 -->
-      <div class="card border flex justify-between p-6 my-10 bg-white" data-status="not-applied"
->
+      <div class="card border flex justify-between p-6 my-10 bg-white">
 
         <div class="left space-y-4">
 
@@ -80,26 +79,26 @@
             <p class="text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
           </div>
 
-          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px]">NOT APPLIED</button>
+          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px] outline">NOT APPLIED</button>
           <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
             worldwide.</p>
 
           <div class="flex gap-3 mb-4">
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">Interview</button>
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">Rejected</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">INTERVIEW</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">REJECTED</button>
           </div>
 
         </div>
 
         <div class="right">
-          <i class="fa-regular fa-trash-can"></i>
+          <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
         </div>
 
 
       </div>
 
       <!-- card 2 -->
-      <div class="card border flex justify-between p-6 my-10 bg-white" data-status="not-applied">
+      <div class="card border flex justify-between p-6 my-10 bg-white">
 
         <div class="left space-y-4">
 
@@ -112,26 +111,26 @@
             <p class="text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
           </div>
 
-          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px]">NOT APPLIED</button>
+          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px] outline">NOT APPLIED</button>
           <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
             worldwide.</p>
 
           <div class="flex gap-3 mb-4">
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">Interview</button>
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">Rejected</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">INTERVIEW</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">REJECTED</button>
           </div>
 
         </div>
 
         <div class="right">
-          <i class="fa-regular fa-trash-can"></i>
+          <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
         </div>
 
 
       </div>
 
       <!-- card 3 -->
-      <div class="card border flex justify-between p-6 my-10 bg-white" data-status="not-applied">
+      <div class="card border flex justify-between p-6 my-10 bg-white">
 
         <div class="left space-y-4">
 
@@ -144,19 +143,19 @@
             <p class="text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
           </div>
 
-          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px]">NOT APPLIED</button>
+          <button class="status bg-[#EEF4FF] px-4 py-1 rounded-[5px] outline">NOT APPLIED</button>
           <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
             worldwide.</p>
 
           <div class="flex gap-3 mb-4">
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">Interview</button>
-            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">Rejected</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#10B981] interview-btn">INTERVIEW</button>
+            <button class="bg-white outline px-4 py-1 rounded-[5px] text-[#EF4444] rejected-btn">REJECTED</button>
           </div>
 
         </div>
 
         <div class="right">
-          <i class="fa-regular fa-trash-can"></i>
+          <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
         </div>
 
 
@@ -165,7 +164,7 @@
 
     </section>
 
-    <div id="hidden-div" class="flex flex-col justify-center items-center space-y-2 hidden">
+    <div id="hidden-div" class="flex flex-col justify-center items-center space-y-4 hidden border p-28 bg-white my-10">
       <img src="./jobs.png" alt="">
       <h2 class="text-xl font-bold text-[#002C5C]">No jobs available</h2>
       <p class="text-[#64748B]">Check back soon for new job opportunities</p>
