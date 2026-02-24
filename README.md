@@ -14,7 +14,7 @@ Ans :
 const div = document.createElement('div');
 
 div.innerHTML = `
-<h1>Hello World</h1>
+<h6>Hello World</h6>
 <p>This is a paragraph</p> 
 `
 parent.appendChild(div);
