@@ -23,7 +23,7 @@ parent.appendChild(div);
 3. What is Event Bubbling? And how does it work?
 Ans :
 
-Event bubbling is a mechanism in the DOM where, when an event is triggered on an element, that event continues to travel up the DOM tree.
+Event bubbling is a method in the DOM where, when an event is triggered on an element, that event continues to travel up the DOM tree.
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 Ans :
