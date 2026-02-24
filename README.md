@@ -13,11 +13,11 @@ Ans :
 
 const div = document.createElement('div');
 
-div.innerHTML = `
+<!-- div.innerHTML = `
 <h6>Hello World</h6>
 <p>This is a paragraph</p> 
 `
-parent.appendChild(div);
+parent.appendChild(div); -->
 
 3. What is Event Bubbling? And how does it work?
 Ans :
