@@ -43,17 +43,17 @@
   <header class="space-y-[25px] w-11/12 mx-auto mb-8">
     <h1 class="text-4xl font-bold text-[#002C5C]">Job Application Tracker</h1>
     <div class="grid grid-cols-3 gap-2">
-      <div class="bg-[#FFFFFF] p-5 rounded-[10px]">
+      <div class="bg-[#FFFFFF] p-5 rounded-[10px] shadow">
         <p>Total</p>
-        <p id="total-count" class="text-2xl text-[#002C5C]">0</p>
+        <p id="total-count" class="text-2xl text-[#002C5C] font-bold">0</p>
       </div>
-      <div class="bg-[#FFFFFF] p-5 rounded-[10px]">
+      <div class="bg-[#FFFFFF] p-5 rounded-[10px] shadow">
         <p>Interview</p>
-        <p id="interview-count" class="text-[#10B981] text-2xl">0</p>
+        <p id="interview-count" class="text-[#10B981] text-2xl font-bold">0</p>
       </div>
-      <div class="bg-[#FFFFFF] p-5 rounded-[10px]">
+      <div class="bg-[#FFFFFF] p-5 rounded-[10px] shadow">
         <p>Rejected</p>
-        <p id="rejected-count" class="text-2xl text-[#EF4444]">0</p>
+        <p id="rejected-count" class="text-2xl text-[#EF4444] font-bold">0</p>
       </div>
     </div>
   </header>
@@ -67,7 +67,7 @@
 
   <main class="w-11/12 mx-auto">
     <div class="all-buttons">
-      <button class="bg-blue-500 text-white px-5 py-2 rounded-[3px] hover:bg-black" id="all-btn">All</button>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-[3px] hover:bg-black" id="all-btn">All</button>
       <button class="bg-[#FFFFFF] px-5 py-2 rounded-[3px] hover:outline text-green-500"
         id="interview-btn">Interview</button>
       <button class="bg-[#FFFFFF] px-5 py-2 rounded-[3px] hover:outline text-red-500"
@@ -77,7 +77,7 @@
     <section id="jobs-section">
 
       <!-- card 1 -->
-      <div class="card flex justify-between p-6 my-10 bg-white">
+      <div class="card flex justify-between p-6 my-10 bg-white rounded-lg shadow-md">
 
         <div class="left space-y-4">
 
@@ -111,7 +111,7 @@
       </div>
 
       <!-- card 2 -->
-      <div class="card flex justify-between p-6 my-10 bg-white">
+      <div class="card flex justify-between p-6 my-10 bg-white rounded-lg shadow-md">
 
         <div class="left space-y-4">
 
@@ -145,7 +145,7 @@
       </div>
 
       <!-- card 3 -->
-      <div class="card flex justify-between p-6 my-10 bg-white">
+      <div class="card flex justify-between p-6 my-10 bg-white rounded-lg shadow-md">
 
         <div class="left space-y-4">
 
@@ -182,7 +182,8 @@
 
     </section>
 
-    <div id="hidden-div" class="flex flex-col justify-center items-center space-y-4 hidden p-28 bg-white my-10">
+    <div id="hidden-div"
+      class="flex flex-col justify-center items-center space-y-4 hidden p-28 bg-white my-10 shadow-md rounded-lg">
       <img src="./jobs.png" alt="">
       <h2 class="text-xl font-bold text-[#002C5C]">No jobs available</h2>
       <p class="text-[#64748B]">Check back soon for new job opportunities</p>
