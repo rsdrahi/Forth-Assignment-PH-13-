@@ -4,7 +4,8 @@ let totalCount = document.getElementById('total-count');
 let interviewCount = document.getElementById('interview-count');
 let rejectedCount = document.getElementById('rejected-count');
 
-// job total count
+// Job Total Count
+
 const jobsSectionCard = document.getElementById('jobs-section');
 // console.log(jobsSectionCard.children)
 // console.log(jobsSectionCard.children.length);
@@ -15,7 +16,7 @@ function allTotalCount () {
 
 allTotalCount();
 
-// card status change
+// Card Status Change
 
 jobsSectionCard.addEventListener("click", function (event) {
   // console.log('clicked')
@@ -40,7 +41,8 @@ jobsSectionCard.addEventListener("click", function (event) {
 
 });
 
-// all filter button
+// All Filter Button
+
 document.getElementById("all-btn")
   .addEventListener("click", function () {
     // console.log('button clicked');
@@ -51,7 +53,7 @@ document.getElementById("all-btn")
     }
   });
 
-  // interview count
+  // Interview Count
 
 let countInterviewBtn = 0;
 
@@ -65,7 +67,8 @@ for (const buttons of interviewButtons) {
   });
 }
 
-// rejected count
+// Rejected Count
+
 let countRejectedBtn = 0;
 const rejectedButtons = document.querySelectorAll(".rejected-btn");
 
@@ -77,7 +80,7 @@ for (const buttons of rejectedButtons) {
   });
 }
 
-// interview filter
+// Interview Filter
 
 const hiddenDiv = document.getElementById('hidden-div');
 
@@ -96,7 +99,7 @@ document.getElementById("interview-btn")
         cards.classList.add("hidden");
       }
     }
-    // hidden div
+    // Hidden div
     if (count === 0) {
       hiddenDiv.classList.remove('hidden')
     } else {
@@ -104,7 +107,7 @@ document.getElementById("interview-btn")
     }
   });
 
-  // rejected filter
+  // Rejected Filter
 
 document.getElementById("rejected-btn")
   .addEventListener("click", function () {
@@ -121,7 +124,7 @@ document.getElementById("rejected-btn")
         cards.classList.add("hidden");
       }
     }
-    // hidden div
+    // Hidden div
     if (count === 0) {
       hiddenDiv.classList.remove('hidden');
     } else {
@@ -129,7 +132,8 @@ document.getElementById("rejected-btn")
     }
   });
 
-  // delete btn
+// Delete btn
+  
 jobsSectionCard.addEventListener("click", function (event) {
   // console.log("clicked delete btn")
   if (event.target.closest(".delete-btn")) {
